@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    .global-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+    }
+
+    form {
+        padding-top: 10px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .card-title {
+        font-weight: 300;
+    }
+
+    .btn {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+
+    .login-form {
+        width: 330px;
+        margin: 20px;
+    }
+
+    .sign-up {
+        text-align: center;
+        padding: 20px 0 0;
+    }
+
+    .alert {
+        margin-bottom: -30px;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="image\icons8-nodejs-144.png" width="50" height="40" class="d-inline-block align-top" alt="">
+            nodejs
+        </a>
+    </nav>
+    <section id="home">
+        <div class="row mt-5">
+            <div class="col-lg-6 ml-4">
+                <img src=image\istockphoto-1278858409-170667a.jpg alt="" class="img-fluid"
+                    style=" width:100%;height:100%;">
+
+            </div>
+            <div class="col-lg-4 >
+              <div class=" global-container">
+                <div class="card login-form">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Log in</h3>
+                        <div class="card-text">
+                            <!--
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
+                            <form action="http://localhost:3001/login" method="post">
+                                <!-- to error: add class "has-danger" -->
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="text" class="form-control form-control-sm" name="usid"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control form-control-sm" name="pass">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+
+                                <div class="sign-up">
+                                    Don't have an account? <a href="undertest.html">Create One</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
